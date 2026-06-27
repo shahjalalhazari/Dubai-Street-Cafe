@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/metadata";
 import "./globals.css";
 import { Roboto, Montserrat } from "next/font/google";
 
@@ -14,8 +15,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Dubai Street Café",
-  description: "Premium coffee experience",
+  title: pageMetadata.home.title,
+  description: pageMetadata.home.description,
 };
 
 export default function RootLayout({ children }) {

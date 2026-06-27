@@ -1,5 +1,40 @@
 @import "tailwindcss";
 
+:root {
+  --font-heading: var(--font-montserrat);
+  --font-body: var(--font-roboto);
+
+  --primary: #B7793E;
+  --secondary: #6F4E37;
+  --accent: #D4A373;
+  
+  --background: #F8F5F2;
+  --section: #F1EAE3;
+  --dark: #2C1810;
+  
+  --heading: #2C1810;
+  --body: #5F5F5F;
+  --light-text: #7A7A7A;
+
+  --container-width: 1320px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --transition: all 0.3s ease;
+}
+
+/* BODY CLASSES */
 body {
-  background: #f8f5f2;
+  background: var(--background);
+}
+
+/* COMMON STYLE CLASSES */
+.heading {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.body-text {
+  font-family: var(--font-roboto), sans-serif;
 }
