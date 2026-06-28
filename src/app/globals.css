@@ -29,6 +29,9 @@
 body {
   background: var(--background);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* COMMON STYLE CLASSES */
 .heading {
@@ -37,4 +40,49 @@ body {
 
 .body-text {
   font-family: var(--font-roboto), sans-serif;
+}
+
+
+/* ANIMATIONS & KEYFRAMES */
+.sticky-navbar {
+  animation: slideDown .5s ease;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+/* SECTION WITH SHAPES AT TOP OR BOTTOM */
+.section-with-top-shape,
+.section-with-bottom-shape {
+  position: relative;
+}
+
+.section-with-top-shape::before,
+.section-with-bottom-shape::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  z-index: 10;
+  background-repeat: repeat-x;
+  height: clamp(12px, 1.5vw, 20px);
+  background-size: auto 100%;
+  pointer-events: none;
+}
+
+.section-with-top-shape::before {
+  top: -1px;
+  background-image: url("/images/overlay-top.png");
+}
+
+.section-with-bottom-shape::after {
+  bottom: -1px;
+  background-image: url("/images/overlay-bottom.png");
 }

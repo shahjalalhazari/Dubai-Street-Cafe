@@ -1,13 +1,12 @@
-import Image from "next/image";
+import Link from "next/link";
 import PrimaryBtn from "../shared/buttons/PrimaryBtn";
 import OutlineBtn from "../shared/buttons/OutlineBtn";
-import Link from "next/link";
 
 const HeroSection = () => {
 
   // STYLE CLASSES
   const styles = {
-    section: "relative h-screen w-full overflow-hidden",
+    section: "relative h-screen w-full overflow-hidden section-with-bottom-shape",
 
     bg: "absolute inset-0 bg-cover bg-center",
 
