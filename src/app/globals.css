@@ -37,9 +37,27 @@ html {
 .heading {
   font-family: var(--font-montserrat), sans-serif;
 }
-
 .body-text {
   font-family: var(--font-roboto), sans-serif;
+}
+
+/* MOBILE (default) */
+.section-container {
+  margin: 64px 24px 0; 
+}
+
+/* 📟 TABLET */
+@media (min-width: 768px) {
+  .section-container {
+    margin: 80px 48px 0;
+  }
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 1024px) {
+  .section-container {
+    margin: 96px 156px 0;
+  }
 }
 
 

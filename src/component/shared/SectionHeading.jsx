@@ -7,8 +7,8 @@ const SectionHeading = ({ subtitle, title, align = "center"}) => {
 
   // 
   const styles = {
-    headingContainer: `flex flex-col gap-3 lg:gap-4 ${alignment[align]} mt-16 md:mt-20 lg:mt-24`,
-    verticalLine: "h-20 lg:24 w-0.5 bg-(--secondary) rounded-full",
+    headingContainer: `flex flex-col gap-3 lg:gap-4 ${alignment[align]}`,
+    verticalLine: "h-16 md:h-20 lg:h-24 w-0.5 bg-(--secondary) rounded-full",
     subTitle: "font-medium body-text uppercase tracking-[4px] lg:tracking-[8px] text-(--accent) text-xl md:text-2xl",
     title: "text-4xl md:text-5xl lg:text-6xl font-bold text-(--dark) heading"
   }
