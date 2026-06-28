@@ -5,13 +5,13 @@ import { FaCheck } from 'react-icons/fa';
 
 const AboutSection = () => {
   const styles = {
-    aboutUsContent: "grid grid-cols-1 items-center mt-10",
-    contentSection: "flex flex-col gap-y-3 z-10",
-    conentHeading: "text-2xl text-(--dark) font-bold heading",
-    conentSubHeading: "text-lg text-(--dark) font-semibold body-text",
-    contentBody: "text-(--body) font-medium body-text",
-    checkListItem: "flex gap-1.5 items-center text-(--primary) text-lg font-medium body-text",
-    coffeeImg: "z-0 h-42",
+    aboutUsContent: "grid grid-cols-1 lg:grid-cols-3 items-center justify-center mt-10 md:mt-14 lg:mt-20",
+    contentSection: "flex flex-col gap-y-3 lg:gap-y-4 z-10",
+    conentHeading: "text-2xl md:text-3xl lg:text-4xl text-(--dark) font-bold heading",
+    conentSubHeading: "text-lg md:text-xl text-(--dark) font-medium body-text",
+    contentBody: "text-(--body) body-text",
+    checkListItem: "flex gap-1.5 items-center text-(--primary) text-lg body-text",
+    coffeeImg: "z-0 md:w-100 lg:w-200 mx-auto",
   }
   return (
     <section className='section-container'>
