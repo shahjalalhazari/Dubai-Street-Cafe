@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/metadata";
 import "./globals.css";
 import { Roboto, Montserrat } from "next/font/google";
+import Footer from "@/component/shared/footer/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${roboto.variable} ${montserrat.variable} antialiased`}>
         {children}
+        <Footer />
       </body>
     </html>
   );

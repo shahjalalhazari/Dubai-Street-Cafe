@@ -56,7 +56,7 @@ html {
 /* 💻 DESKTOP */
 @media (min-width: 1024px) {
   .section-container {
-    margin: 96px 156px 0;
+    margin: 96px 160px 0;
   }
 }
 
