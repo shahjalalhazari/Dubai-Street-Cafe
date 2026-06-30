@@ -1,5 +1,6 @@
 import AboutSection from './AboutSection';
 import HeroSection from './HeroSection';
+import ReservationSection from './ReservationSection';
 import ServicesSection from './ServicesSection';
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <ReservationSection />
     </main>
   );
 };
