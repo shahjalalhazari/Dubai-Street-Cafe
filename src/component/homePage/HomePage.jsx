@@ -2,6 +2,7 @@ import AboutSection from './AboutSection';
 import HeroSection from './HeroSection';
 import ReservationSection from './ReservationSection';
 import ServicesSection from './ServicesSection';
+import TestimonialSection from './TestimonialSection';
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <AboutSection />
       <ServicesSection />
       <ReservationSection />
+      <TestimonialSection />
     </main>
   );
 };
