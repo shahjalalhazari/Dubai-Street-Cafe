@@ -1,5 +1,6 @@
 import AboutSection from './AboutSection';
 import HeroSection from './HeroSection';
+import NewsletterSection from './NewsletterSection';
 import ReservationSection from './ReservationSection';
 import ServicesSection from './ServicesSection';
 import TestimonialSection from './TestimonialSection';
@@ -9,8 +10,9 @@ const HomePage = () => {
     <main className="home-page">
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
       <ReservationSection />
+      <ServicesSection />
+      <NewsletterSection />
       <TestimonialSection />
     </main>
   );
